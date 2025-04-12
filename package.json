@@ -1,0 +1,25 @@
+{
+  "name": "tankgame",
+  "version": "1.0.0",
+  "description": "A modern browser-based remake of the classic \"Tank\" game with:\r - 🎨 Enhanced graphics and animations\r - 🎮 Real-time player controls and enemy AI\r - 🧠 Scoring system with persistent leaderboard\r - 🎨 Customizations (skins, upgrades)",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && node app.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeghalKPSSK/tankGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeghalKPSSK/tankGame/issues"
+  },
+  "homepage": "https://github.com/MeghalKPSSK/tankGame#readme"
+}
