@@ -3,10 +3,10 @@
 A modern browser-based remake of the classic "Tank" game with:
 - 🎨 Enhanced graphics and animations
 - 🎮 Real-time player controls and enemy AI
-- 🧐 Scoring system with persistent leaderboard
+- 🧠 Scoring system with persistent leaderboard
 - 🎨 Customizations (skins, upgrades)
 
-Frontend: **React (CBMS structure)**  
+Frontend: **React (CBMS - Component-Based Module Structure) using Vite**  
 Backend: **Node.js + Express**  
 Database: **MongoDB (via Mongoose)**
 
@@ -17,21 +17,17 @@ Database: **MongoDB (via Mongoose)**
 ```
 /tank-classic-game/
 │
-├── client/                      # React Frontend (CBMS Style)
+├── client/                      # React Frontend (CBMS with Vite)
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/              # Images, sprites, sound effects
-│   │   ├── modules/             # Feature-based folders
-│   │   │   ├── game/            # Game-specific components, hooks, and models
-│   │   │   │   ├── components/  # GameCanvas, HUD, etc.
-│   │   │   │   ├── hooks/       # useGameController
-│   │   │   │   ├── models/      # GameModel
-│   │   │   │   └── utils/       # Math, collision, movement utils
-│   │   │   ├── leaderboard/     # Leaderboard-related views & services
-│   │   │   └── score/           # Score saving logic
-│   │   ├── services/            # Axios services for API calls
-│   │   ├── App.js
-│   │   └── index.js
+│   │   ├── components/          # Reusable UI components
+│   │   ├── features/            # Game modules (e.g. game, player, enemies)
+│   │   │   └── [feature]/       # Each feature folder contains its own model, view, and controller logic
+│   │   ├── services/            # Axios service for API calls
+│   │   ├── utils/               # Game utilities (math, collision, etc)
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │
 ├── server/                     # Node.js + Express Backend
 │   ├── config/                 # DB connection & config
@@ -70,11 +66,11 @@ Start the backend server:
 node app.js
 ```
 
-### 3. Frontend Setup
+### 3. Frontend Setup (with Vite)
 ```bash
 cd client
 npm install
-npm start
+npm run dev
 ```
 
 ---
@@ -124,7 +120,7 @@ exports.getLeaderboard = async (req, res) => {
 
 ## 💻 Frontend Starter Code
 
-### `modules/game/models/GameModel.js`
+### `features/game/GameModel.js`
 ```js
 const GameModel = {
   player: { x: 200, y: 200, direction: 'UP', health: 100 },
@@ -136,7 +132,7 @@ const GameModel = {
 export default GameModel;
 ```
 
-### `modules/game/components/GameCanvas.jsx`
+### `features/game/GameCanvas.jsx`
 ```jsx
 import { useRef, useEffect } from 'react';
 
@@ -162,7 +158,7 @@ const GameCanvas = ({ model }) => {
 export default GameCanvas;
 ```
 
-### `modules/game/hooks/useGameController.js`
+### `features/game/useGameController.js`
 ```js
 import { useEffect } from 'react';
 
