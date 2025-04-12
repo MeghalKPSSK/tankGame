@@ -3,10 +3,10 @@
 A modern browser-based remake of the classic "Tank" game with:
 - 🎨 Enhanced graphics and animations
 - 🎮 Real-time player controls and enemy AI
-- 🧠 Scoring system with persistent leaderboard
+- 🧐 Scoring system with persistent leaderboard
 - 🎨 Customizations (skins, upgrades)
 
-Frontend: **React (MVC structure)**  
+Frontend: **React (CBMS structure)**  
 Backend: **Node.js + Express**  
 Database: **MongoDB (via Mongoose)**
 
@@ -17,15 +17,19 @@ Database: **MongoDB (via Mongoose)**
 ```
 /tank-classic-game/
 │
-├── client/                      # React Frontend (MVC Style)
+├── client/                      # React Frontend (CBMS Style)
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/              # Images, sprites, sound effects
-│   │   ├── controllers/         # Custom hooks & logic handlers
-│   │   ├── models/              # State models
-│   │   ├── views/               # React components (UI + Canvas)
-│   │   ├── services/            # Axios service for API calls
-│   │   ├── utils/               # Game utilities (math, collision, etc)
+│   │   ├── modules/             # Feature-based folders
+│   │   │   ├── game/            # Game-specific components, hooks, and models
+│   │   │   │   ├── components/  # GameCanvas, HUD, etc.
+│   │   │   │   ├── hooks/       # useGameController
+│   │   │   │   ├── models/      # GameModel
+│   │   │   │   └── utils/       # Math, collision, movement utils
+│   │   │   ├── leaderboard/     # Leaderboard-related views & services
+│   │   │   └── score/           # Score saving logic
+│   │   ├── services/            # Axios services for API calls
 │   │   ├── App.js
 │   │   └── index.js
 │
@@ -120,7 +124,7 @@ exports.getLeaderboard = async (req, res) => {
 
 ## 💻 Frontend Starter Code
 
-### `models/GameModel.js`
+### `modules/game/models/GameModel.js`
 ```js
 const GameModel = {
   player: { x: 200, y: 200, direction: 'UP', health: 100 },
@@ -132,7 +136,7 @@ const GameModel = {
 export default GameModel;
 ```
 
-### `views/GameCanvas.jsx`
+### `modules/game/components/GameCanvas.jsx`
 ```jsx
 import { useRef, useEffect } from 'react';
 
@@ -158,7 +162,7 @@ const GameCanvas = ({ model }) => {
 export default GameCanvas;
 ```
 
-### `controllers/useGameController.js`
+### `modules/game/hooks/useGameController.js`
 ```js
 import { useEffect } from 'react';
 
@@ -195,5 +199,4 @@ export const useGameController = (model, setModel) => {
 
 ## 🙌 Acknowledgements
 Inspired by the original "Tank 1990" game from the Brick Console era.
-
 
