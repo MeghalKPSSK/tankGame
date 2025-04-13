@@ -1,0 +1,58 @@
+[LOG - 2025-04-13 12:57:45]: Server is running on http://localhost:5000
+[LOG - 2025-04-13 12:59:27]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 12:59:52]: Error: Callback function is not available with promise clients.
+    at PromisePool.query (C:\Meghal\Programming Journal\tankGame\server\node_modules\mysql2\lib\promise\pool.js:38:13)
+    at C:\Meghal\Programming Journal\tankGame\server\app.js:31:10
+    at Layer.handleRequest (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:295:15
+    at processParams (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:582:12)
+    at next (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:291:5)
+[LOG - 2025-04-13 13:08:19]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 13:08:27]: TypeError: Console.error is not a function
+    at C:\Meghal\Programming Journal\tankGame\server\app.js:37:17
+    at Layer.handleRequest (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:295:15
+    at processParams (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:582:12)
+    at next (C:\Meghal\Programming Journal\tankGame\server\node_modules\router\index.js:291:5)
+    at jsonParser (C:\Meghal\Programming Journal\tankGame\server\node_modules\body-parser\lib\types\json.js:100:7)
+[LOG - 2025-04-13 13:08:38]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 13:08:39]: Database connection error: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+[LOG - 2025-04-13 13:17:52]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 13:17:55]: Database connection error: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+[LOG - 2025-04-13 13:56:19]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:00:06]: Database connection error: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
+[LOG - 2025-04-13 14:03:36]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:03:41]: Database connection error: TypeError: pool.execute is not a function or its return value is not iterable
+[LOG - 2025-04-13 14:07:01]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:07:14]: Database connection error: TypeError: pool.execute is not a function or its return value is not iterable
+[ERROR - 2025-04-13 14:07:14]: Database connection error: TypeError: pool.execute is not a function or its return value is not iterable
+[LOG - 2025-04-13 14:09:07]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:09:12]: Database connection error: TypeError: pool.execute is not a function or its return value is not iterable
+[ERROR - 2025-04-13 14:09:12]: Database connection error: TypeError: pool.execute is not a function or its return value is not iterable
+[LOG - 2025-04-13 14:11:08]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:11:08]: Database connection error: TypeError: pool.execute is not a function
+[ERROR - 2025-04-13 14:11:11]: Database connection error: TypeError: pool.execute is not a function
+[LOG - 2025-04-13 14:11:54]: Server is running on http://localhost:5000
+[ERROR - 2025-04-13 14:11:54]: Database connection error: TypeError: pool.execute is not a function
+[ERROR - 2025-04-13 14:12:02]: Database connection error: TypeError: pool.execute is not a function
+[ERROR - 2025-04-13 14:12:05]: Database connection error: TypeError: pool.execute is not a function
+[ERROR - 2025-04-13 14:12:05]: Database connection error: TypeError: pool.execute is not a function
+[ERROR - 2025-04-13 14:12:05]: Database connection error: TypeError: pool.execute is not a function
+[LOG - 2025-04-13 14:12:45]: Server is running on http://localhost:5000
+[LOG - 2025-04-13 14:12:48]: pool: [object Promise]
+[ERROR - 2025-04-13 14:12:48]: Database connection error: TypeError: pool.execute is not a function
+[LOG - 2025-04-13 14:13:15]: Server is running on http://localhost:5000
+[LOG - 2025-04-13 14:13:17]: pool: {}
+[ERROR - 2025-04-13 14:13:17]: Database connection error: TypeError: pool.execute is not a function
+[LOG - 2025-04-13 14:14:35]: Server is running on http://localhost:5000
+[LOG - 2025-04-13 14:14:40]: Database connection successful: 2
+[LOG - 2025-04-13 14:15:16]: Database connection successful: 2
+[LOG - 2025-04-13 14:15:17]: Database connection successful: 2
