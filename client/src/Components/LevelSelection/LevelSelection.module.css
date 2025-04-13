@@ -1,13 +1,17 @@
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
-    background-color: var(--primary-bg);
+    background-color: #080808;
     box-shadow: 0 4px 6px var(--box-shadow-color);
     width: 100%;
     height: 100%;
+    background-image: url("/assets/LevelSelectionPage.png");
+    background-size: contain;
+    background-position: start;
+    background-repeat: no-repeat;
 }
 
 /* Remove list markers */
@@ -29,6 +33,7 @@ h2 {
 /* Button base styles */
 .container button {
     font-size: 20px;
+    width: 100%;
     padding: 16px 32px;
     border-radius: 8px;
     margin: 12px;
@@ -76,6 +81,7 @@ h2 {
     background-color: #171616;
     color: #666;
     cursor: not-allowed;
+    width: 100%;
     border: none;
     box-shadow: none;
 }

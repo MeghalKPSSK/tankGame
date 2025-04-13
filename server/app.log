@@ -56,3 +56,6 @@
 [LOG - 2025-04-13 14:14:40]: Database connection successful: 2
 [LOG - 2025-04-13 14:15:16]: Database connection successful: 2
 [LOG - 2025-04-13 14:15:17]: Database connection successful: 2
+[LOG - 2025-04-13 14:23:48]: Server is running on http://localhost:5000
+[LOG - 2025-04-13 14:24:16]: Database connection successful: 2
+[LOG - 2025-04-13 14:48:32]: Database connection successful: 2

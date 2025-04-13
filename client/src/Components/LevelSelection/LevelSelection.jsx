@@ -55,21 +55,24 @@ const LevelSelection = () => {
             onClick={levelSelect}
             tabIndex={0}
         >
-            <h2>Level Selection</h2>
-            <ul>
-                {levels.map((level) => (
-                    <li key={level}>
-                        <button
-                            ref={(el) => (buttonsRef.current[level - 1] = el)}
-                            disabled={level > unlockedLevel}
-                            className={level <= unlockedLevel ? (selectedLevel === level ? styles.selected : styles.unselected) : ""}
-                            onMouseEnter={() => handleMouseEnter(level)}
-                        >
-                            Level {level}
-                        </button>
-                    </li>
-                ))}
-            </ul>
+            <div style={{ width: "50%" }}>
+            </div>
+            <div style={{width: "30%"}}><h2>Level Selection</h2>
+                <ul>
+                    {levels.map((level) => (
+                        <li key={level}>
+                            <button
+                                ref={(el) => (buttonsRef.current[level - 1] = el)}
+                                disabled={level > unlockedLevel}
+                                className={level <= unlockedLevel ? (selectedLevel === level ? styles.selected : styles.unselected) : ""}
+                                onMouseEnter={() => handleMouseEnter(level)}
+                            >
+                                Level {level}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
